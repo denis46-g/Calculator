@@ -18,6 +18,20 @@
         tools:context=".view.MainActivity">
 
         <Button
+            android:id="@+id/button_reset"
+            android:layout_width="65dp"
+            android:layout_height="79.5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#586177"
+            android:text="R"
+            android:textSize="45sp"
+            app:layout_constraintStart_toEndOf="@+id/button_equal"
+            app:layout_constraintTop_toBottomOf="@+id/button_plus"
+            tools:ignore="MissingConstraints" />
+
+        <Button
             android:id="@+id/button_plus"
             android:layout_width="65dp"
             android:layout_height="79.5dp"
@@ -56,19 +70,19 @@
             android:text="÷"
             android:textSize="45sp"
             app:layout_constraintStart_toEndOf="@+id/button9"
-            app:layout_constraintTop_toBottomOf="@+id/button_del"
+            app:layout_constraintTop_toBottomOf="@+id/button_clear"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button_del"
+            android:id="@+id/button_clear"
             android:layout_width="65dp"
             android:layout_height="79.5dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="276dp"
             android:layout_weight="1"
             android:backgroundTint="#586177"
-            android:text="DEL"
-            android:textSize="15sp"
+            android:text="С"
+            android:textSize="45sp"
             app:layout_constraintStart_toEndOf="@+id/button9"
             app:layout_constraintTop_toTopOf="@+id/textView0"
             tools:ignore="MissingConstraints" />
@@ -95,12 +109,12 @@
             android:backgroundTint="#403C3C"
             android:text="0"
             android:textSize="60sp"
-            app:layout_constraintStart_toEndOf="@+id/button."
+            app:layout_constraintStart_toEndOf="@+id/button_point"
             app:layout_constraintTop_toBottomOf="@+id/button2"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button."
+            android:id="@+id/button_point"
             android:layout_width="100dp"
             android:layout_height="102dp"
             android:layout_marginStart="10dp"
@@ -251,7 +265,7 @@
             android:layout_height="130dp"
             android:background="#FFFFFF"
             android:backgroundTint="#FFFFFF"
-            android:textSize="30sp"
+            android:textSize="45sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -261,8 +275,21 @@
             android:layout_height="130dp"
             android:background="#FFFFFF"
             android:backgroundTint="#FFFFFF"
-            android:textSize="18sp"
+            android:textSize="28sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="145dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:text="ЮФУ"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
